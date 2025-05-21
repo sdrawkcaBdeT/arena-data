@@ -1,0 +1,49 @@
+# 9‑D vector order = [MAT, CAL, COM, PRE, DUR, TEC, LAB, CAP, WGT]
+
+# ── Raw resources ───────────────────────────────────────────────
+ore_iron:   { vec: [0,0,0,0,9999,1,0.1,0,10],  base_price: 5,  weight: 10, durability: 9999, tech: 0 }
+ore_copper: { vec: [0,0,0,0,9999,1,0.1,0,10],  base_price: 4,  weight: 10, durability: 9999, tech: 0 }
+ore_tin:    { vec: [0,0,0,0,9999,1,0.1,0,10],  base_price: 3,  weight: 10, durability: 9999, tech: 0 }
+ore_coal:   { vec: [0,0,0,0,9999,0,0.1,0, 8],  base_price: 2,  weight:  8, durability: 9999, tech: 0 }
+ore_silver: { vec: [0,0,0,1,9999,1,0.1,0,10],  base_price: 8,  weight:  9, durability: 9999, tech: 0 }
+ore_gold:   { vec: [0,0,0,2,9999,1,0.1,0,10],  base_price: 12,  weight: 10, durability: 9999, tech: 0 }
+
+oak_log:        { vec: [1,0,0,0,30,0,0.2,0, 5], base_price: 3, weight: 5, durability: 30, tech: 0 }
+mahogany_log:   { vec: [1,0,0,1,35,0,0.3,0, 6], base_price: 6, weight: 6, durability: 35, tech: 0 }
+wood:           { vec: [1,0,0,0,25,0,0.3,0, 4], base_price: 4, weight: 4, durability: 25, tech: 0 }
+
+grain:   { vec: [0.2,1,0,0, 3,0,0.1,0,1], base_price: 1, weight: 1, durability: 3, tech: 0 }
+milk:    { vec: [0.2,1,1,0, 2,0,0.1,0,1], base_price: 2, weight: 1, durability: 2, tech: 0 }
+beef:    { vec: [0.2,3,1,0, 2,0,0.2,0,2], base_price: 4, weight: 2, durability: 2, tech: 0 }
+wool:    { vec: [1,0,2,0,150,0,0.2,0,1], base_price: 2, weight: 1, durability: 150, tech: 0 }
+
+sardine:    { vec: [0.2,1,0,0,1,0,0.12,0,1], base_price: 1, weight: 1, durability: 1, tech: 0 }
+herring:    { vec: [0.2,1,0,0,1,0,0.12,0,1], base_price: 1, weight: 1, durability: 1, tech: 0 }
+trout:      { vec: [0.2,1,0,0,1,0,0.12,0,1], base_price: 2, weight: 1, durability: 1, tech: 0 }
+salmon:     { vec: [0.2,2,0,0,1,0,0.15,0,1], base_price: 3, weight: 1, durability: 1, tech: 0 }
+swordfish:  { vec: [0.2,3,0,1,1,0,0.2,0,2], base_price: 5, weight: 2, durability: 1, tech: 0 }
+shark:      { vec: [0.2,4,0,1,1,0,0.3,0,3], base_price: 8, weight: 3, durability: 1, tech: 0 }
+
+# ── Intermediate goods ──────────────────────────────────────────
+beer:   { vec: [0.1,2,2,0,3,1,0.4,0.08,1], base_price: 2, weight: 1, durability: 3, tech: 1 }
+bread:  { vec: [0.2,2,1,0,5,0,0.3,0.05,1], base_price: 3, weight: 1, durability: 5, tech: 0 }
+fabric: { vec: [1,0,3,0,300,1,0.5,0.1,1],  base_price: 3, weight: 1, durability: 300, tech: 1 }
+
+armor_basic:   { vec: [0,0,1,1,1500,1,3,0.4,20], base_price: 20, weight: 20, durability: 1500, tech: 1 }
+weapon_basic:  { vec: [0,0,1,1,1000,1,3,0.4,15], base_price: 15, weight: 15, durability: 1000, tech: 1 }
+
+meal_meat:      { vec: [0.2,3,2,0,2,1,0.4,0.07,1],  base_price: 4, weight: 1, durability: 2, tech: 1 }
+meal_sardine:   { vec: [0.2,2,1,0,2,1,0.3,0.05,1], base_price: 3, weight: 1, durability: 2, tech: 1 }
+meal_herring:   { vec: [0.2,2,1,0,2,1,0.3,0.05,1], base_price: 3, weight: 1, durability: 2, tech: 1 }
+meal_trout:     { vec: [0.2,2,1,0,2,1,0.3,0.05,1], base_price: 5, weight: 1, durability: 2, tech: 1 }
+meal_salmon:    { vec: [0.2,3,1,0,2,1,0.35,0.05,1], base_price: 6, weight: 1, durability: 2, tech: 1 }
+meal_swordfish: { vec: [0.2,4,2,1,2,1,0.4,0.07,1], base_price: 11, weight: 1, durability: 2, tech: 1 }
+meal_shark:     { vec: [0.2,4,3,2,2,1,0.45,0.07,1], base_price: 16, weight: 1, durability: 2, tech: 1 }
+
+clothing: { vec: [1,0,6,1,600,1,2,0.2,3], base_price: 10, weight: 3, durability: 600, tech: 1 }
+
+# ── Final / capital goods ───────────────────────────────────────
+furniture:    { vec: [1,0,6,2,1000,2,5,1,40], base_price: 8,  weight: 40, durability: 1000, tech: 2 }
+wagon:        { vec: [1,0,3,2,3000,3,12,3,150], base_price: 50, weight: 150, durability: 3000, tech: 3 }
+horse:        { vec: [1,0,4,3,3650,3,0,0,400], base_price: 80, weight: 400, durability: 3650, tech: 0 }
+horse_cart:   { vec: [1,0,4,2,4000,3,15,3,180], base_price: 20, weight: 180, durability: 4000, tech: 3 }
